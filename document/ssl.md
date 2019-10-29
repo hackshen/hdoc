@@ -36,18 +36,25 @@
     ```
 
 #### 生成证书
-```javascript
+
 1、在[ req ]一节下找到req_extensions = v3_req 取消注释
 2、在[ v3_req ] 一节 增加 subjectAltName = @alt_names
 3、在[ v3_req ] 一节 的上方增加一节
     DNS.1 = i.alicdn.com
     IP.1 = 127.0.0.1
 4、生成csr
-    `openssl req -new -nodes -keyout server.key -out server.csr -config openssl.cnf`
-5、生成公钥
-    `openssl x509 -req -days 3650 -in server.csr -signkey server.key -out server.crt -extensions v3_req -extfile openssl.cnf`
-6、关于`openssl.cnf`我的Mac上装的有OpenSSL但是没有这个文件，博主是在自己的centos上拷下来的
+
+```bash
+openssl req -new -nodes -keyout server.key -out server.csr -config openssl.cnf
 ```
+5、生成公钥
+
+```bash
+openssl x509 -req -days 3650 -in server.csr -signkey server.key -out server.crt -extensions v3_req -extfile openssl.cnf
+```
+
+6、关于 [`openssl.cnf 点我`](./document/openssl.cnf)
+
 
 #### 安装证书
 - 双击`server.crt`安装证书到钥匙串里，且在钥匙串里面要选择`始终信任`

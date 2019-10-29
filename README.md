@@ -9,5 +9,6 @@
 
  - [Git command](./document/git_command.md)
  - [解决Chrome证书信任问题](./document/ssl.md)
+ - [常用ssh命令](./document/ssh.md)
 
 
