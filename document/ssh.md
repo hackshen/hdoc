@@ -20,3 +20,21 @@ scp -r <user_name>@<server_ip>:<remote_file_path> <local_file_path>
 复制文件: scp -r root@192.168.1.100:~/test/a.js ~/a.js
 指定ssh端口: scp -P 2222 -r root@192.168.1.100:~/test/a.js ~/a.js
 ```
+#### 映射本地端口到远程
+
+```bash
+ssh -Nf -R 2222:127.0.0.1:22 root@<remote address>
+```
+
+#### SSH password free login
+
+```bash
+ssh-copy-id root@<remote address>
+```
+
+#### SSH agent
+
+```bash
+方案1: 编辑本地 vi /etc/ssh/ssh_config 将ForwardAgent值设置为yes，表示允许客户端进行转发
+方案2: ssh -A root@xxx.xxx.xxx.xxx
+```
