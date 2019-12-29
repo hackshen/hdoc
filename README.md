@@ -4,6 +4,7 @@
 
  - [Mac Development environment](./document/mac_env.md)
  - [Mac install mysql](./document/mac_install_mysql.md)
+ - [Raspberry_Config](./document/raspberry_config.md)
 
 > #### tools
 
