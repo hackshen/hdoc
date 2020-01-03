@@ -29,3 +29,20 @@ function decodeHtml(deCodeStr) {
 }
 ```
 
+#### url
+
+```javascript
+function fromListData(shipFromList) {
+    if(!shipFromList){return []}
+    return shipFromList.replace('+', '').split(':').map((item)=>{
+        if(item) {
+            const tempObj = {};
+            item.replace(/(.*?)-(.*?)([,]|$)/g, (a, b, c)=>{
+                tempObj[b] = c;
+            })
+            return tempObj;
+        }
+    })
+}
+```
+
