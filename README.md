@@ -12,3 +12,5 @@
  - [常用ssh命令](./document/ssh.md)
 
 
+> #### Other
+ - [Error Msg](./document/message.md)
