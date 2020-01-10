@@ -2,6 +2,7 @@
 
 ```bash
 docker run 
+	<Demo>: docker run -itd -p 3001:3000 -v /node:/node --name node_demo node
         -d    #后台运行容器，并返回容器ID
         -i    #以交互式模式运行容器，常与-t参数同时使用
         -t    #给容器重新分配一个伪终端，常与-i参数同时使用
