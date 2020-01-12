@@ -35,10 +35,10 @@ docker inspect
 	–type #为指定类型返回JSON
 
 docker logs
-	-f #指定返回值格式或模板文件
-	-s #显示总文件大小
-	–type #为指定类型返回JSON
-
+	-f : 跟踪日志输出
+	--since :显示某个开始时间的所有日志
+	-t : 显示时间戳
+	--tail :仅列出最新N条容器日志
 docker port
 	<Demo>: docker port node
 
