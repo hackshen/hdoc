@@ -60,7 +60,7 @@ docker rmi
     -f #强制删除
 ```
 
-#### redis
+### redis
 
 ```bash
 docker run \
@@ -68,3 +68,13 @@ docker run \
     -p 6379:6379 
     -d redis
 ```
+
+### wssh
+
+```bash
+docker run \
+    --name wssh \
+    -p 8888:8888 \
+    -itd python:3.7 /bin/sh -c 'pip install webssh && wssh --fbidhttp=False'
+```
+
