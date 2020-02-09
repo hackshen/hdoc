@@ -69,10 +69,9 @@ docker run \
     -d redis
 ```
 
-### wssh
+### [webssh](https://github.com/huashengdun/webssh)
 
 ```bash
-[webssh](https://github.com/huashengdun/webssh)
 docker run \
     --name wssh \
     -p 8888:8888 \
