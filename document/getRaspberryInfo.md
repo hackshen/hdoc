@@ -1,5 +1,15 @@
 ## 获取 raspbery CPU RAM DISK IP 信息，驱动ssd1306
 
+> [Luma.OLED](https://luma-oled.readthedocs.io/en/latest/install.html)
+
+> [Luma.OLED github](https://github.com/rm-hull/luma.oled)
+
+```bash
+# 安装驱动
+$ sudo apt install python-dev python-pip libfreetype6-dev libjpeg-dev build-essential libopenjp2-7 libtiff5
+$ sudo -H pip install --upgrade luma.oled
+```
+
 ```bash
 # -*- coding:UTF-8 -*-
 from luma.core.interface.serial import i2c, spi
