@@ -2,7 +2,40 @@
 
 > demo-branch: 演示分支 ([在线练习Git](https://learngitbranching.js.org/))
 
+#### 初始化
+```bash
+# 生成公钥
+ssh-keygen -t rsa -C "你的邮箱地址"
+# 查看你的公钥
+cat ~/.ssh/id_rsa.pub
 
+# 全局配置提交信息
+git config --global user.name "提交者的名字"
+git config --global user.email "你的邮箱地址"
+
+# 测试是否配置成功
+ssh -T git@github.com
+```
+
+#### 进阶
+```bash
+# 配置多个公钥(~/.ssh 下新建config文件填入以下内容)
+
+#Github
+Host github
+HostName github.com
+User hackshen.com@gmail.com
+IdentityFile ~/.ssh/id_rsa_github  #你github对应的公钥路径
+
+#Gitlab
+Host gitlab
+HostName gitlab.xxxxx.com
+User hackshen.com@gmail.com
+IdentityFile ~/.ssh/id_rsa #你gitlab对应的公钥路径
+
+Tips: 如果你电脑重启了这时候你会发现你github的公钥失效了，因为缓存丢失了执行以下命令即可
+ssh-add ~/.ssh/id_rsa_github
+```
 #### 分支相关
 
 ```bash
