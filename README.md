@@ -4,7 +4,8 @@
 
  - [Mac Development environment](./document/mac_env.md)
  - [Mac install mysql](./document/mac_install_mysql.md)
- - [Raspberry_Config](./document/raspberry_config.md)
+ - [Raspberry Config](./document/raspberry_config.md)
+ - [Centos Env](./document/centos_env.md)
 
 > #### Tools
  - [Git command](./document/git_command.md)
