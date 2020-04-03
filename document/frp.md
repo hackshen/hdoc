@@ -14,3 +14,13 @@ docker run -d --name frp_c --network host -v <local frpc.ini path>:/frp/frpc.ini
 docker run -itd --name frp_s --network host -v <local frps.ini path>:/frp/frps.ini hackshen/frp /bin/sh -c './frps -c frps.ini'
 ```
 
+>  frps.ini
+```bash
+[common]
+dashboard_port = 7500
+#dashboard 用户名密码，默认都为 admin
+dashboard_user = admin
+dashboard_pwd = admin
+bind_port=7002
+vhost_http_port = 81
+```
