@@ -17,3 +17,5 @@
 - [xiaozhi](https://github.com/qq449245884/xiaozhi)
 
 - [reg query](https://any86.github.io/any-rule/)
+
+ - [ConardLi](http://www.conardli.top/blog/)
