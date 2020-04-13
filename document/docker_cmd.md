@@ -1,6 +1,9 @@
 # Dcoker Command
 
 ```bash
+# docker 开机启动
+systemctl enable docker
+
 docker run 
     -d    #后台运行容器，并返回容器ID
     -i    #以交互式模式运行容器，常与-t参数同时使用
