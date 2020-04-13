@@ -3,7 +3,8 @@
 ### [Homebrew](https://brew.sh/)
 
 > Homebrew是一款Mac OS平台下的软件包管理工具，拥有安装、卸载、更新、查看、搜索等很多实用的功能。简单的一条指令，就可以实现包管理，而不用你关心各种依赖和文件路径的情况，十分方便快捷。
->
+
+> 如果你zsh或者nvm连接超时，在 /etc/hosts 文件里面添加 `199.232.68.133 raw.githubusercontent.com`
 
 
 ###### 安装 Homebrew
