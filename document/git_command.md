@@ -2,6 +2,9 @@
 
 > demo-branch: 演示分支 ([在线练习Git](https://learngitbranching.js.org/))
 
+> git访问慢可以在host里面添加: `140.82.112.6 www.github.com  api.github.com`
+
+
 #### 初始化
 ```bash
 # 生成公钥
