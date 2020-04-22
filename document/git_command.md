@@ -2,7 +2,7 @@
 
 > demo-branch: 演示分支 ([在线练习Git](https://learngitbranching.js.org/))
 
-> git访问慢可以在host里面添加: `140.82.112.6 www.github.com  api.github.com`
+> git访问慢可以在host里面添加: `140.82.112.6 www.github.com  api.github.com` 也可通过[Ip Address](https://www.ipaddress.com/)查询github的真实地址
 
 
 #### 初始化
