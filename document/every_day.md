@@ -23,3 +23,5 @@
 - [Dao cloud](http://get.daocloud.io/)
 
 - [每日3+1](https://github.com/haizlin/fe-interview)
+
+- [weekly](https://github.com/dt-fe/weekly)
