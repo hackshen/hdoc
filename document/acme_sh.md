@@ -6,11 +6,14 @@
  
  > [获取阿里云AccessKey](https://usercenter.console.aliyun.com/?spm=5176.12818093.nav-right.dak.488716d0qgnmuw#/manage/ak)
  
- 
- [docker & docker-compose install](https://github.com/hackshen/hdoc/blob/master/document/centos_env.md#install-docker)
- 
+  [docker & docker-compose install](https://github.com/hackshen/hdoc/blob/master/document/centos_env.md#install-docker)
+
+
  ```bash
-#docker-compose.yml
+# 新建一个docker-compose.yml 
+touch docker-compose.yml
+
+# 填入下面配置
 version: "3"
 services:
   acme.sh:
@@ -19,18 +22,15 @@ services:
     restart: always
     command: daemon
     environment:
-      - Ali_Key=xxxxxxx
-      - Ali_Secret=xxxxxx
+      - Ali_Key=xxxxxxx # 此处填获取的阿里云的AccessKey
+      - Ali_Secret=xxxxxxx # 此处填获取的阿里云的AccessKey
     volumes:
-      - /root/ssl:/acme.sh
- ```
- 
-```bash
-# 编辑docker-compose.yml填入阿里云获取的key
-# 启动容器
+      - ./ssl:/acme.sh
+
+# 启动容器(启动后可以通过 docker ps 查看当前运行的容器)
 docker-compose.yml up -d
 
-# 生成证书 (生成证书放在/root/ssl目录)
+# 生成证书 (生成证书放在当前ssl目录)
 docker exec acme.sh \
     --issue \
     --dns dns_ali \
