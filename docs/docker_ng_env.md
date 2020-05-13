@@ -1,6 +1,6 @@
 # docker-compose Using environment variables in nginx configuration
 
-> 想在docker-compose里面配置nginx的变量，参考了dockerhub nginx的文档[文档地址](https://hub.docker.com/_/nginx/)  内容如下
+> 想在docker-compose里面配置nginx的变量，参考了dockerhub nginx的文档[传送门](https://hub.docker.com/_/nginx/)  内容如下
 
 ```bash
 # 官方Demo
@@ -24,8 +24,7 @@ web:
 "envsubst '$NGINX_HOST $NGINX_PORT' < /etc/nginx/conf.d/mysite.template > /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"
 ```
 
-但是这样并没解决我的问题，NGINX报错找不到这个变量，又是一顿谷够，找到了一片文档[传送门](https://github.com/docker-library/docs/issues/496)按照大神的意思是需要对变量转义，如下
-
+但是这样并没解决我的问题，NGINX报错找不到这个变量，又是一顿谷够，找到了一片文档[传送门](https://github.com/docker-library/docs/issues/496)按照大神的意思是需要对变量转义，`$$NGINX_HOST $$NGINX_PORT`
 ```bash
 "envsubst '$$NGINX_HOST $$NGINX_PORT' < /etc/nginx/conf.d/mysite.template > /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"
 ```
