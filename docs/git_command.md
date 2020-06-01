@@ -121,5 +121,5 @@ git reset --hard <commit-hash>
 
 ```bash
 # 合并某次commint
-git cherry_pick <commit-hash>
+git cherry-pick <commit-hash>
 ```
