@@ -116,3 +116,10 @@ git reset <commit-hash>
 # 代码回退到某一版本且以前的代码都不要了
 git reset --hard <commit-hash>
 ```
+
+#### 其它
+
+```bash
+# 合并某次commint
+git cherry_pick <commit-hash>
+```
