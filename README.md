@@ -14,9 +14,9 @@
  - [解决Chrome证书信任问题](./docs/ssl.md)
  - [常用ssh命令](./docs/ssh.md)
  - [Intranet through Frp](./docs/frp.md)
- - [docker command]('./docs/docker_cmd.md')
- - [download icloud]('./docs/download_icloud.cm')
-
+ - [docker command](./docs/docker_cmd.md)
+ - [download icloud](./docs/download_icloud.md)
+ 
  > ### reapberry
   - [get raspberry info](./docs/get_raspberry_info.md)
 
