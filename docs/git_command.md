@@ -96,6 +96,9 @@ git add .
 
 # 提交代码到本地仓库
 git commit -m 'xxxx'
+
+# 修改上次commit信息（该操作会修改commit id）
+git commit --amend -m 'xxx'
 ```
 
 #### 撤回相关
