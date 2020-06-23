@@ -23,6 +23,24 @@ docker run \
     hackshen/frp /bin/sh -c './frps -c frps.ini'
 ```
 
+> frpc.ini
+```bash
+[common]
+# 服务器地址
+server_addr = xxx.xxx.xxx.xxx
+server_port = 7002
+admin_addr =  127.0.0.1
+admin_port = 7400
+admin_user = admin
+admin_pwd = admin
+
+[ssh]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 22
+remote_port = 6007
+```
+
 >  frps.ini
 ```bash
 [common]
@@ -33,3 +51,4 @@ dashboard_pwd = admin
 bind_port=7002
 vhost_http_port = 81
 ```
+
