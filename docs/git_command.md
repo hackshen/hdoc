@@ -27,12 +27,14 @@ ssh -T git@github.com
 #Github
 Host github
 HostName github.com
+port 22 # 默认22端口，如果改了端口这里要填下
 User hackshen.com@gmail.com
 IdentityFile ~/.ssh/id_rsa_github  #你github对应的公钥路径
 
 #Gitlab
 Host gitlab
 HostName gitlab.xxxxx.com
+port 22 # 默认22端口，如果改了端口这里要填下
 User hackshen.com@gmail.com
 IdentityFile ~/.ssh/id_rsa #你gitlab对应的公钥路径
 
