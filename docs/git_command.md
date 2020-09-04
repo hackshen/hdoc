@@ -120,6 +120,12 @@ git reset <commit-hash>
 
 # 代码回退到某一版本且以前的代码都不要了
 git reset --hard <commit-hash>
+
+# 构建一个新的版本回退代码 错误的commit依然保留
+git revert
+
+# 吧revert回退的代码重新commit
+git cherry-pick 
 ```
 
 #### 其它
