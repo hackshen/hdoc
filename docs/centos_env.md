@@ -6,8 +6,7 @@ yum install git -y
 ```
 
 #### Install zsh
-- [Go to mac_env Install zsh](https://github.com/hackshen/hdoc/blob/master/document/mac_env.md#%E5%AE%89%E8%A3%85-oh-my-zsh)
-
+- [Go to mac_env Install zsh](https://github.com/hackshen/hdoc/blob/master/docs/mac_env.md#%E5%AE%89%E8%A3%85-oh-my-zsh)
 
 #### Install docker
 - [https://docs.docker.com/install/linux/docker-ce/centos/](https://docs.docker.com/install/linux/docker-ce/centos/)
