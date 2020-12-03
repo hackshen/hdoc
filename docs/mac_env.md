@@ -76,7 +76,7 @@ ssh -T git@github.com
 
 ```bash
 #在终端输入如下命令
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 ```
 ###### 配置环境变量
 ```bash
