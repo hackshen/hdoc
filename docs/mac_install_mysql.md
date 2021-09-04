@@ -6,7 +6,7 @@
 
 - 初始化MySQL配置: --> `mysql_secure_installation`
 
-    ```javascript
+    ```bash
     hackshen@shen  :~ comet$ mysql_secure_installation
 
     Securing the MySQL server deployment.
@@ -65,11 +65,11 @@
     ```
 
 #### MySQL忘记密码卸载
-1、`brew remove mysql`
+- `brew remove mysql`
 
-2、`launchctl unload -w ~/Library/LaunchAgents/com.mysql.mysqld.plist`
+- `launchctl unload -w ~/Library/LaunchAgents/com.mysql.mysqld.plist`
 
-3、`rm ~/Library/LaunchAgents/com.mysql.mysqld.plist`
+- `rm ~/Library/LaunchAgents/com.mysql.mysqld.plist`
 
-4、`sudo rm -rf /usr/local/var/mysql`
+- `sudo rm -rf /usr/local/var/mysql`
 
