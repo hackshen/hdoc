@@ -20,6 +20,23 @@ git config --global user.email "你的邮箱地址"
 ssh -T git@github.com
 ```
 
+#### Git Proxy
+```bash
+# 全局设置socks5 代理
+git config http.proxy socks5://127.0.0.1:1080
+git config https.proxy socks5://127.0.0.1:1080
+ 
+# 取消代理
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+ 
+# 也可以在git配置文件里面写
+[http]
+    proxy = socks5://127.0.0.1:1080
+[https]
+    proxy = socks5://127.0.0.1:1080
+```
+
 #### 进阶
 ```bash
 # 配置多个公钥(~/.ssh 下新建config文件填入以下内容)
@@ -40,6 +57,15 @@ IdentityFile ~/.ssh/id_rsa #你gitlab对应的公钥路径
 
 Tips: 如果你电脑重启了这时候你会发现你github的公钥失效了，因为缓存丢失了执行以下命令即可
 ssh-add ~/.ssh/id_rsa_github
+
+# gitHub proxy
+Host github
+HostName github.com
+ProxyCommand connect -S 127.0.0.1:1080 %h %p
+PreferredAuthentications publickey
+port 22 # 默认22端口，如果改了端口这里要填下
+User hackshen.com@gmail.com
+IdentityFile ~/.ssh/id_rsa_github  #你github对应的公钥路径
 ```
 #### 分支相关
 
@@ -54,8 +80,8 @@ git checkout -b demo-branch
 git branch -D demo-branch 
 
 # 删除远程分支
-1、git push origin -d demo-branch
-2、git push origin :demo-branch
+git push origin -d demo-branch
+git push origin :demo-branch
 
 # 显示本地分支
 git branch
