@@ -154,7 +154,32 @@ git revert
 git cherry-pick 
 ```
 
-#### 其它
+#### 修改历史
+
+```bash
+# 查看提交历史
+git log
+
+# 查看提交历史 显示统计信息
+git log --stat
+
+# 查看所有提交历史并显示提交差异
+git log -p
+
+# 查看某个文件提交历史
+git log <file-name>
+
+# 查看某个文件提交历史并显示提交差异
+git log -p <file-name>
+
+# 查看最近2次提交并显示提交差异
+git log -p -2
+
+# 查看最近一次提交内容
+git show <file-name>
+```
+
+#### 内容合并
 
 ```bash
 # 合并某次commint
