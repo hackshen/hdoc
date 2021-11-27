@@ -20,6 +20,21 @@ git config --global user.email "你的邮箱地址"
 ssh -T git@github.com
 ```
 
+#### 公司和个人项目分开提交 [conditional_includes](https://git-scm.com/docs/git-config#_conditional_includes)
+```bash
+# 查看gitconfig路径
+$HOME/.gitconfig
+
+# 写入gitconfig文件里面
+[includeIf "gitdir:~/private"]
+	path = ~/private/.gitconfig
+	
+# private/.gitconfig 的内容
+[user]
+    name = Hshen
+    email = hackshen.com@gmail.com
+```
+
 #### Git Proxy
 ```bash
 # 全局设置socks5 代理
