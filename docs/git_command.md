@@ -26,6 +26,10 @@ ssh -T git@github.com
 git config http.proxy socks5://127.0.0.1:1080
 git config https.proxy socks5://127.0.0.1:1080
  
+# 全局http/s代理
+git config --global http.proxy http://127.0.0.1:1080
+git config --global https.proxy https://127.0.0.1:1080
+
 # 取消代理
 git config --global --unset http.proxy
 git config --global --unset https.proxy
@@ -55,7 +59,7 @@ port 22 # 默认22端口，如果改了端口这里要填下
 User hackshen.com@gmail.com
 IdentityFile ~/.ssh/id_rsa #你gitlab对应的公钥路径
 
-Tips: 如果你电脑重启了这时候你会发现你github的公钥失效了，因为缓存丢失了执行以下命令即可
+# Tips: 如果你电脑重启了这时候你会发现你github的公钥失效了,因为缓存丢失了执行以下命令即可
 ssh-add ~/.ssh/id_rsa_github
 
 # gitHub proxy
@@ -154,6 +158,29 @@ git revert
 git cherry-pick 
 ```
 
+#### 暂存
+
+```bash
+# 暂存当前更改
+git stash
+
+# 暂存当前所有的文件，包括untracked的文件
+git stash -u
+
+# 展示所有的stash
+git stash list
+
+# 回到某个stash的状态
+git stash apply <stash@{n}>
+
+# 回到最后一个stash状态，并删除
+git stash pop
+
+# 清除所有的stash
+git stash clear
+
+#
+```
 #### 修改历史
 
 ```bash

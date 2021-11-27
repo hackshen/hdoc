@@ -81,3 +81,29 @@ docker run \
     -itd python:3.7 /bin/sh -c 'pip install webssh && wssh --fbidhttp=False'
 ```
 
+### [Portainer](Install Portainer with Docker on Linux) 可视化管理工具
+
+```bash
+docker run -d -p 9000:9000 --name portainer \
+    --restart=always \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v portainer_data:/data \
+    portainer/portainer-ce:latest
+```
+
+### [Docker 开启远程访问](http://www.baidu.com)
+
+```bash
+# 编辑宿主机问题件
+vi /lib/systemd/system/docker.service
+
+# Centos 修改如下
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2375 -H unix://var/run/docker.sock
+
+# 通知docker服务做出的修改
+systemctl daemon-reload
+
+# 重启docker服务 
+service docker restart
+
+```
