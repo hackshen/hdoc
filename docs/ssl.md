@@ -3,7 +3,6 @@
 #### 本机环境
 - Mac： 10.12.6
 - NGINX：nginx/1.12.2
-
 - nginx 配置文件
 
     ```javscript
