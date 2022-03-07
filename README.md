@@ -17,10 +17,12 @@
  - [常用ssh命令](./docs/ssh.md)
  - [Intranet through Frp](./docs/frp.md)
  - [docker command](./docs/docker_cmd.md)
- - [download icloud](./docs/download_icloud.md)
  
+#### Dodcker
+ - [download icloud](./docs/download_icloud.md)
+
  > ### reapberry
-  - [get raspberry info](./docs/get_raspberry_info.md)
+  - [获取树莓派系统信息](./docs/get_raspberry_info.md)
 
 
 
