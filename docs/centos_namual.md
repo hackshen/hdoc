@@ -11,6 +11,7 @@ yum install git -y
 
 #### Install net-tools
 ```bash
+# 可以生成ifconfig命令，netstat命令
 yum -y install net-tools
 ```
 
@@ -73,6 +74,17 @@ firewall-cmd --zone=public --remove-port=3000/tcp --permanent
 systemctl restart docker
 ```
 
+### 其他
+```bash
+# 查看端口占用情况
+netstat -tulpn
+
+# 查看指定端口
+netstat -tulpn | grep 80
+
+# 查看PID占用程序
+ps -ef | grep 1500
+```
 ## 升级git到2.x版本
 ```bash
 # centos默认git 是1.8版本的，如果你的项目里面有git hook 请升级到2.3版本以上

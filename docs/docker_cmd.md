@@ -63,6 +63,20 @@ docker rmi
     -f #强制删除
 ```
 
+### phpmyadmin
+
+```bash
+# PMA_HOST 数据库地址
+# PMA_PORT 数据库端口（默认3306）
+# -p 8081:80 将容器80端口映射到主机8081端口
+ddocker run \
+    -d --name phpmyadmin \
+    -e PMA_HOST=xxx \
+    -e PMA_PORT=3306 \
+    -p 8087:80 \
+    phpmyadmin/phpmyadmin
+```
+
 ### redis
 
 ```bash
