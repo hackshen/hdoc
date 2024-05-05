@@ -105,6 +105,14 @@ docker run -d -p 9000:9000 --name portainer \
     portainer/portainer-ce:latest
 ```
 
+### [it-tools](https://github.com/CorentinTh/it-tools) 适用于开发人员和 IT 人员的有用工具
+
+```bash
+docker run -d --name it-tools \
+    --restart unless-stopped -p 8080:80 \
+    corentinth/it-tools:latest
+```
+
 ### [Docker 开启远程访问](http://www.baidu.com)
 
 ```bash

@@ -3,6 +3,9 @@
 #### Chrome 地址栏显示协议头
   - 由于Chrome80以后的版本都不支持，所以只能通过extension实现[Suspicious Site Reporter](https://chrome.google.com/webstore/detail/suspicious-site-reporter/jknemblkbdhdcpllfgbfekkdciegfboi/related?utm_source=chrome-ntp-icon)
 
+#### 插件安装目录
+  - C:\Users\用户名\AppData\Local\Google\Chrome\User Data\Default\Extensions 
+  
 #### 查看Chrome所有命令
 ```bash
 chrome://about
