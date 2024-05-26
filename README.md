@@ -34,6 +34,7 @@
 
 #### Other
  - [Error Msg](./docs/message.md)
+ - [小米路由器后台frp映射](./docs/frp_miwifi.md)
 
 
 #### 物联网
